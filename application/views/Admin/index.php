@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <?php $this->load->helper('url'); ?>
         <?php if (!isset($name)) {  redirect(base_url('Admin/login'), 'refresh');  }?>
-        <link rel="stylesheet" href="<?= base_url('public/bootstrap/css/bootstrap.css') ?>">
+        <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css') ?>">
         <link rel="stylesheet" href="<?= base_url('public/css/loginCss.css') ?>">
-        <script src="<?= base_url('public/jQuery/jquery-1.9.1.min.js') ?>"></script>
+        <script src="<?= base_url('public/js/jquery-1.9.1.min.js') ?>"></script>
 
-        <script src="<?= base_url('public/bootstrap/js/bootstrap.min.js') ?>"></script>
+        <script src="<?= base_url('public/js/bootstrap.min.js') ?>"></script>
 
         <title>投票页面</title>
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -17,8 +17,8 @@
           <script src="<?= base_url('public/js/html5shiv.js') ?>"></script>
         <![endif]-->
         <!--[if lte IE 6]>
-        <link rel="stylesheet" type="text/css" href="<?= base_url('public/bootstrap/css/bootstrap-ie6.css')?>">
-        <link rel="stylesheet" type="text/css" href="<?= base_url('public/bootstrap/css/ie.css')?>">
+        <link rel="stylesheet" type="text/css" href="<?= base_url('public/css/bootstrap-ie6.css')?>">
+        <link rel="stylesheet" type="text/css" href="<?= base_url('public/css/ie.css')?>">
         <![endif]-->
         <style type="text/css">
             body {
@@ -57,10 +57,6 @@
             }
         </style>
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
         <script type="text/javascript">
             function ShowMyModal() {
                 $('#myModal').modal();
@@ -141,5 +137,5 @@
     </body>
 </html>
 <!--[if lte IE 6]>
-    <script src="<?= base_url('public/bootstrap/js/bootstrap-ie.js')?>"></script>
+    <script src="<?= base_url('public/js/bootstrap-ie.js')?>"></script>
 <![endif]-->
